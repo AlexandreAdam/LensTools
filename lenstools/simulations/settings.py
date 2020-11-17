@@ -25,7 +25,7 @@ def select_parser(filename,read=True):
 
 	if filename.endswith(".ini"):
 
-		options = config.ConfigParser()
+		options = config.RawConfigParser()
 		if read:
 			options.read([filename])
 			options.filename = filename
